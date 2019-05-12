@@ -24,7 +24,7 @@ function loadMenu(type,number){
   var mClone = m[0].cloneNode(true);
   quizNumber = number;
   for(var j=0; j<m.length; j++){
-    m[0].parentNode.removeChild(m[0]);
+    document.getElementsByClassName("accounts")[0].innerHTML = "";
   }
   obj.forEach(function(acc,i){
     mClone = mClone.cloneNode(true);
@@ -36,6 +36,9 @@ function loadMenu(type,number){
     });
     mClone.getElementsByClassName("copy-pass")[0].addEventListener("click",function(){
       clipboard.writeText(obj[i].password);
+    });
+    mClone.getElementsByClassName("delete")[0].addEventListener("click",function(){
+      confirmCheck("are you sure you want to remove this entry?",removeData,acc.id);
     });
     document.getElementsByClassName("accounts")[0].appendChild(mClone);
   });
@@ -66,9 +69,12 @@ function loadData(username,number){
       else console.log(error);
   });
 }
-function removeData(){
-  var url = "http://"+settings.ip+":"+settings.port+"/accounts";
-  request.delete(url,{"id":1});
+function removeData(id){
+  var url = "http://"+settings.ip+":"+settings.port+"/accounts/"+id;
+  request.delete(url,function(err, resp, body){
+    loadData();
+    loadMenu();
+  });
 }
 function addData(data){
   var url = "http://"+settings.ip+":"+settings.port+"/accounts";
@@ -84,10 +90,10 @@ function addData(data){
           headers: headersOpt,
           json: true,
       }, function (error, response, body) {  
-          //Print the Response
+          loadData();
+          loadMenu();
           console.log(body);  
-  }); 
-
+  });
 }
 function addAccount(){
   var title = document.getElementById("input-title").value;
@@ -103,6 +109,8 @@ function addAccount(){
     name="";
     pass="";
     toggleAddAccount();
+    loadData();
+    loadMenu();
   }
 }
 function toggleAddAccount(){

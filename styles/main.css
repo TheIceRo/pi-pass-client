@@ -1,6 +1,11 @@
 body{
     font-family: "Roboto Condensed",serif;
 }
+.title{
+    background-color: #ffffff;
+    width: 100%;
+    top: 0px;
+}
 .header{
     font-size: 32px;
     font-family: 'Oswald';
@@ -73,6 +78,7 @@ a:hover{
     cursor: pointer;
 }
 .account-cont{
+    
     color: #ffffff;
     background-color: #50b3f5;
     width: 400px;
@@ -107,6 +113,12 @@ a:hover{
     color: #7feed2;
     cursor: pointer;
 }
+.delete{
+    margin-top: 4px;
+    font-size: 14px;
+    color: #ffffff79;
+    float: right;
+}
 .add-account{
 
     margin: 0px auto;
@@ -118,6 +130,7 @@ a:hover{
     border-radius: 3px;
     overflow: hidden;
     transition: all, 0.2s;
+    opacity: 0;
 }
 .add-account.toggle{
     margin-bottom: 20px;
@@ -126,6 +139,7 @@ a:hover{
     top: 90px;
     display: block;
     border: 2px solid #00000018;
+    opacity: 100;
 }
 .add-account .medium-header{
     text-align: center;

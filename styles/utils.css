@@ -1,0 +1,47 @@
+.confirm-window{
+    position: fixed;
+    top: 500px;
+    opacity: 0;
+    left: 4px;
+    right: 0px;
+    margin: 0px auto;
+    height: 150px;
+    width: 400px;
+    padding-left: 10px;
+    border: 2px solid #00000049;
+    background-color: #ffffff;
+    border-radius: 8px;
+    transition: all, 0.1s;
+}
+.confirm-window.toggle{
+    top: 30%;
+    opacity: 100;
+}
+.confirm-window .button{
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+}
+.confirm{
+    background-color: #63cf4d;
+    left: 10px;
+}
+.confirm:hover{
+    background-color: #78e462;
+}
+.confirm:active{
+    background-color: #50ac3e;
+}
+.cancel{
+    background-color: #d35757;
+    left: 90px;
+}
+.cancel:hover{
+    background-color: #e06767;
+}
+.cancel:active{
+    background-color: #c54a4a;
+}
+.hidden{
+    display: none!important;
+}
