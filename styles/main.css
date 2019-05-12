@@ -1,0 +1,168 @@
+body{
+    font-family: "Roboto Condensed",serif;
+}
+.header{
+    font-size: 32px;
+    font-family: 'Oswald';
+    margin: 0px auto;
+    margin-top: 10px;
+}
+.container{
+    width: 430px;
+    margin: 0px auto;
+}
+.settings{
+    margin: 6px 0px;
+    display: inline-block;
+    text-decoration: none;
+    color: #50b3f5;
+}
+.medium-header{
+    font-size: 26px;
+    margin-top: 10px;
+    font-family: 'Oswald';
+}
+.small-header{
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Roboto Condensed';
+}
+.button{
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #764de7;
+    padding: 8px 10px; 
+    border: 2px solid #00000034;
+    width: 50px;
+    text-align: center;
+    display: block;
+    margin: 5px 0px;
+    border-radius: 5px;
+    transition: background-color,0.1s;
+    outline: none;
+}
+.button:hover{
+    background-color: #815be7;
+}
+.button:active{
+    background-color: #6745c5;
+}
+.options{
+    border-top: 1px solid #ccc;
+    margin-top: 5px;
+}
+.input-text{
+    outline: none;
+    -webkit-appearance: none; 
+    margin-top: 5px;
+    padding: 5px 5px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none; 
+}
+a:focused{
+    cursor: progress;
+}
+a:hover{
+    cursor: pointer;
+}
+.account-cont{
+    color: #ffffff;
+    background-color: #50b3f5;
+    width: 400px;
+    margin: 0px auto;
+    border: 2px solid #00000017;
+    
+    padding: 20px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.accounts{
+    border-top: 1px solid #ccc;
+    margin: 0px auto;
+    padding-top: 15px;
+    margin-top: 5px;
+    width: 430px;
+}
+.shadows{
+    -webkit-box-shadow: 0px 14px 22px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 14px 22px -12px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 30px -10px rgba(0,0,0,0.75);
+}
+#title{
+    font-size: 20px;
+}
+.account-text{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.account-copy{
+    font-size: 14px;
+    color: #7feed2;
+    cursor: pointer;
+}
+.add-account{
+
+    margin: 0px auto;
+    background-color: #50b3f5;
+    width: 430px;
+    height: 0px;
+    
+    color: #ffffff;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: all, 0.2s;
+}
+.add-account.toggle{
+    margin-bottom: 20px;
+    padding: 20px 0px;
+    height: 350px;
+    top: 90px;
+    display: block;
+    border: 2px solid #00000018;
+}
+.add-account .medium-header{
+    text-align: center;
+}
+.add-account .input-text{
+    background-color: #50b3f5;
+    color: #ececec;
+    display: block;
+    width: 50%;
+    margin: 5px auto;
+    border-color: #ffffff;
+}
+.add-account .small-header{
+    text-align: center;
+}
+.add-account .button{
+    margin: 0px auto;
+    margin-top: 10px;
+    width: 100px;
+    float: none;
+}
+#close-add-acc{
+    background-color: #e04f4f;
+}
+#close-add-acc:hover{
+    background-color: #e95d5d;
+}
+#close-add-acc:active{
+    background-color: #c53c3c;
+}
+.add-account .button#create-acc{
+    margin: 0px auto;
+    margin-top: 20px;
+}
+#save{
+    margin-top: 20px;
+}
+#add-acc{
+    float: right;
+}

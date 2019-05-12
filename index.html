@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/manager.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Roboto+Condensed" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Pi-Pass</h1>
+        <a href="settings.html" class="settings">Settings</a>
+        <a id="add-acc" class="settings">Add Account</a>
+    </div>
+
+    <div class="accounts">
+        <div class="add-account shadows">
+            <h2 class="medium-header">Add Account</h2>
+            <h2 class="small-header">Title</h2>
+            <input type="text" id="input-title" class="input-text">
+            <h2 class="small-header">Username</h2>
+            <input type="text" id="input-name" class="input-text">
+            <h2 class="small-header">Password</h2>
+            <input type="password" id="input-pass" class="input-text">
+            <a id="create-acc" class="button">Add Account</a>
+            <a id="close-add-acc" class="button">Close Window</a>
+        </div>
+        <div class="account-cont shadows">
+
+            <p id="title" class="account-title">notttitle</p>
+            <p id="name" class="account-text name">name: username</p>
+            <a id="copy-name" class="account-copy copy-name">copy</a>
+            <p id="pass" class="account-text account pass">password: ***</p>
+            <a id="copy-pass" class="account-copy copy-pass">copy</a>
+        </div>
+    </div>
+</body>
+</html>
